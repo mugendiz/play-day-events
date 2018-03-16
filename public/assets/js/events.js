@@ -18,6 +18,13 @@ var initialBidder = "No one :-(";
 var highPrice = initialBid;
 var highBidder = initialBidder;
 
+require('dotenv').config();
+
+var keys_js = require('./keys.js')
+var Twitter = require('twitter');
+var Spotify = require('node-spotify-api');
+var fs = require('fs');
+
 // --------------------------------------------------------------
 
 // At the initial load and subsequent value changes, get a snapshot of the stored data.
