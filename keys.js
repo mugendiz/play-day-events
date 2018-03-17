@@ -3,7 +3,7 @@ console.log("This is loaded");
 // var keys_js = require('./keys.js')
 // var Eventbrite = require('eventbrite');
 
-var firebase = {
+var log = {
   apikey: process.env.APIKEY,
   authDomain: process.env.AUTHDOMAIN,
   databaseURL: process.env.DATABASEURL,
@@ -13,5 +13,5 @@ var firebase = {
 };
 
 module.exports = {
-  firebase: firebase,
+ log:log,
 };
