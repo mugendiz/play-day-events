@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PROJECT 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="styleshseet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/modal_login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../carousel/slick/slickCss/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../carousel/slick/slickCss/slick-theme.css"/>
+
+
+  </head>
+
+  <body>
+
+ <h1>
+  NAME TBD
+</h1>
+
+<!-- Carousel -->
+<div class="fade">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+</div>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+
+<!-- UNCOMMENT THIS VVVVVV -->
+
+      <!-- <img src="../images/login_avatar.jpeg" alt="Avatar" class="avatar"> -->
+    </div>
+  </form>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+  </li>
+
+  <!-- Library Tab -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Libraries</a>
+    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+      <a class="dropdown-item" href="#">Babies & Toddlers</a>
+      <a class="dropdown-item" href="#">School Age Children</a>
+      <a class="dropdown-item" href="#">Tweens</a>
+      <div class="dropdown-divider"></div>
+    </div>
+
+<!-- Museums & Zoos Tab -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Museums & Zoos</a>
+      <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+        <a class="dropdown-item" id="babyToddler" href="#">Babies & Toddlers</a>
+        <div class="babyPage"></div>
+        <a class="dropdown-item" id="schoolAge" href="#">School Age Children</a>
+        <a class="dropdown-item" id="tweens" href="#">Tweens</a>
+        <div class="dropdown-divider"></div>
+      </div>
+
+<!-- Parks and Recreation Tab -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Parks and Recreation</a>
+        <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <a class="dropdown-item" id="babyToddler" href="#">Babies & Toddlers</a>
+          <a class="dropdown-item" id="schoolAge" href="#">School Age Children</a>
+          <a class="dropdown-item" id="tweens" href="#">Tweens</a>
+          <div class="dropdown-divider"></div>
+        </div>
+</ul>
+</div>
+
+<div class="babyToddlerEvents">
+<h2>Here are some upcoming Parks and Recreation events happening near you!</h2>
+</div>
+
+<div class="eventsBox">
+
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+    <span>Copyright &copy; 2018 |  |  |  | </span>
+    </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../Carousel/slick/slickCss/slick.min.js"></script>
+<script type="text/javascript" src="../js/events.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Carousel JS -->
+<script type="text/javascript">
+window.onload = function(event) {
+  event.preventDefault();
+  // Here we construct our URL
+  var queryURL = "https://www.eventbriteapi.com/v3/events/?categories=family-and-education&token=S6QQEW7L4B5Z4NSM6VOC";
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).done(function(response) {
+    console.log(response);
+    $("body").text(JSON.stringify(response));
+    });
+
+    $('.fade').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+
+    });
+  };
+
+  </script>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+  </body>
+</html>

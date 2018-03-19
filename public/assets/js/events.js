@@ -1,24 +1,52 @@
 
-// This .on("click") function will trigger the AJAX Call
+// This .on("click") function will send you to the html pages
 
-      $("#babyToddler").on("click", function(event) {
-        event.preventDefault();
+console.log("events.js connected!");
 
-        // Here we construct our URL
-        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
-
-        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
-        // and display it in the div with an id of movie-view
-
-        //------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
-
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).done(function(response) {
-          $("#movie-view").text(JSON.stringify(response));
-        });
-
-        // -----------------------------------------------------------------------
-
+  $("#babyToddler").on("click", function(event) {
+          location.href = "../layouts/museum.html";
       });
+
+  // -----------------------------------------------------------------------
+
+  $("#schoolaAge").on("click", function(event) {
+    event.preventDefault();
+    // Here we construct our URL
+    var queryURL = "https://www.eventbriteapi.com/v3/events/?categories=family-and-education/&subcategory=school-age/&token=S6QQEW7L4B5Z4NSM6VOC";
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+      $(".card-body").text(JSON.stringify(response));
+      });
+  // -----------------------------------------------------------------------
+
+  // $("#tweens").on("click", function(event) {
+  //   event.preventDefault();
+  //     location.href = "../layouts/museum.html";
+  //   });
+  //
+  // // -----------------------------------------------------------------------
+  //
+  // // API call for Parks and Recreation JSON response
+  //
+  //   $("#babyToddler").on("click", function(event) {
+  //     event.preventDefault();
+  //     location.href = "../layouts/parks_rec.html.html";
+  //     });
+  //   // -----------------------------------------------------------------------
+  //
+  //   $("#schoolaAge").on("click", function(event) {
+  //     event.preventDefault();
+  //     location.href = "../layouts/parks_rec.html.html";
+  //     });
+  //   // -----------------------------------------------------------------------
+  //
+  //   $("#tweens").on("click", function(event) {
+  //     event.preventDefault();
+  //     location.href = "../layouts/parks_rec.html.html";
+  //     });
+  //   // -----------------------------------------------------------------------
+  //
+  //
