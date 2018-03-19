@@ -42,7 +42,10 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="../images/login_avatar.jpeg" alt="Avatar" class="avatar">
+
+<!-- UNCOMMENT THIS VVVVVV -->
+
+      <!-- <img src="../images/login_avatar.jpeg" alt="Avatar" class="avatar"> -->
     </div>
 
     <div class="container">
@@ -88,6 +91,7 @@ class="close" title="Close Modal">&times;</span>
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Museums & Zoos</a>
       <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
         <a class="dropdown-item" id="babyToddler" href="#">Babies & Toddlers</a>
+        <div class="babyPage"></div>
         <a class="dropdown-item" id="schoolAge" href="#">School Age Children</a>
         <a class="dropdown-item" id="tweens" href="#">Tweens</a>
         <div class="dropdown-divider"></div>
@@ -97,9 +101,9 @@ class="close" title="Close Modal">&times;</span>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Parks and Recreation</a>
         <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-          <a class="dropdown-item" href="#">Babies & Toddlers</a>
-          <a class="dropdown-item" href="#">School Age Children</a>
-          <a class="dropdown-item" href="#">Tweens</a>
+          <a class="dropdown-item" id="babyToddler" href="#">Babies & Toddlers</a>
+          <a class="dropdown-item" id="schoolAge" href="#">School Age Children</a>
+          <a class="dropdown-item" id="tweens" href="#">Tweens</a>
           <div class="dropdown-divider"></div>
         </div>
 </ul>
@@ -173,6 +177,8 @@ class="close" title="Close Modal">&times;</span>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../Carousel/slick/slickCss/slick.min.js"></script>
+<script type="text/javascript" src="../js/events.js"></script>
+<script type="text/javascript" src="../js/parks_rec.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
