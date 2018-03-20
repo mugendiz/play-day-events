@@ -14,22 +14,22 @@ module.exports = function (app) {
 
     // index route loads events.html
     app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/events.html"));
+        res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
     // bookstore route loads bookstore.html
-    app.get("/bookstore", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/bookstore.html"));
+    app.get("/babies", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/babies.html"));
     });
 
     // amusmementpark route loads amusmementpark.html
-    app.get("/amusmementpark", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/amusmementpark.html"));
+    app.get("/children", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/children.html"));
     });
 
     // library route loads library.html
-    app.get("/library", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/library.html"));
+    app.get("/parents", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/parents.html"));
     });
 
     // museum route loads museum.html
@@ -37,13 +37,5 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/museum.html"));
     });
 
-    // waterpark route loads waterpark.html
-    app.get("/waterpark", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/waterpark.html"));
-    });
-
-    // events route loads events.html
-    app.get("/events", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/events.html"));
-    });
+  
 };
