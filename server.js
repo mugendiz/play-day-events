@@ -6,7 +6,8 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-
+var sequelize = require("sequelize");
+var mysql = require("mysql");
 
 
 var app = express();

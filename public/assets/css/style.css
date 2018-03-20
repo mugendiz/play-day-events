@@ -31,9 +31,12 @@ h1 {
   width: 70%;
   height: 190px;
   margin-top: 10px;
+
 }
 .cloud {
   width: 50%;
+  position: relative;
+	text-align: center;
 }
 /*  */
 #wrapper {
@@ -71,7 +74,8 @@ h1 {
   overflow: auto;
   color: #fff;
   background: #fff;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #778899;
+  border-radius: 30px;
 }
 
 .navbar {
@@ -123,7 +127,7 @@ footer {
   font-size: 12px;
   text-align: center;
   background: #E6E6FA;
-  border-top: 3px solid ;
+  border-top: 3px solid #778899;
 	height: 20px;
 }
 
@@ -137,19 +141,22 @@ footer {
   font-size: 20px;
   margin: auto;
 }
-
-.cloud {
-	position: relative;
-	 text-align: center;
-}
-
 .name {
     position: absolute;
+    color: 		#9370DB;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px black;
+    letter-spacing: 10px;
+  font-family: Lemonade, Helvetica, Arial, sans-serif;
+
 }
 
+  @font-face {
+  font-family: Lemonade ;
+  src: url("../img/lemonade.otf");
+  }
 
 
 
