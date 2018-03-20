@@ -33,5 +33,5 @@ module.exports = function (sequelize, DataTypes) {
         });
     };
 
-    return Name;
+    return Comment;
 };
