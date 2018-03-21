@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": process.env.DEVELOPMENT_PASSWORD,
+    "password": "Iss0cool",
     "database": "events_DB",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -21,3 +21,5 @@ module.exports = {
     "dialect": "mysql"
   }
 }
+
+//process.env.DEVELOPMENT_PASSWORD
