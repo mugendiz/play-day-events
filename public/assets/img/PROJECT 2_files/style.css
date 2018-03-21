@@ -72,9 +72,6 @@ h1 {
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
-  border-radius: 60px;
-  padding: 3px;
-  height: 80px;
 }
 
 .navbar {
@@ -152,14 +149,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@font-face {
-font-family: Lemonade ;
-src: url("../images/Lemonade.otf");
-}
-@font-face {
-font-family: Kinder ;
-src: url("../images/text.ttf");
-}
+
+
+
+
+
 
 
 
