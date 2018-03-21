@@ -6,8 +6,9 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-
-
+var sequelize = require("sequelize");
+var mysql = require("mysql");
+require('dotenv').config();
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -23,8 +24,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Static directory
 app.use(express.static("public"));
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/post-api-routes")(app);
+require("./routes/html-routes")(app);
 
 
 // Routes
