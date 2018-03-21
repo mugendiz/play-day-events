@@ -14,28 +14,24 @@ module.exports = function (app) {
 
     // index route loads events.html
     app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/index.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/layouts/index.html"));
     });
 
     // bookstore route loads bookstore.html
     app.get("/babies", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/babies.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/layouts/babies.html"));
     });
 
     // amusmementpark route loads amusmementpark.html
     app.get("/children", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/children.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/layouts/children.html"));
     });
 
     // library route loads library.html
     app.get("/parents", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/parents.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/layouts/parents.html"));
     });
 
     // museum route loads museum.html
-    app.get("/museum", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/museum.html"));
-    });
 
-  
 };
