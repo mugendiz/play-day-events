@@ -10,7 +10,7 @@
 function apiCall() {
   var show = $('#show');
   // Here we construct our URL
-  var queryURL = "https://www.eventbriteapi.com/v3/events/search/?categories=115&subcategories=15005&location.address=new%20york&token=S6QQEW7L4B5Z4NSM6VOC";
+  var queryURL = "https://www.eventbriteapi.com/v3/events/search/?categories=115&subcategories=15004&location.address=new%20york&token=S6QQEW7L4B5Z4NSM6VOC";
 
   $.ajax({
     url: queryURL,
@@ -22,7 +22,7 @@ function apiCall() {
       var title = $('<h2>');
       var description = $('<p>');
       title.html(response.events[i].name.text);
-      
+
       show.append(title)
     }
   });
