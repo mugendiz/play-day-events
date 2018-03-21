@@ -14,7 +14,7 @@ function apiCallss() {
       var description = $('<p>');
       title.html(response.events[i].name.text);
 
-      show.append(title)
+      see.append(title)
     }
   });
 }

@@ -14,7 +14,7 @@ function apiCalls() {
       var description = $('<p>');
       title.html(response.events[i].name.text);
 
-      show.append(title)
+      appear.append(title)
     }
   });
 }
