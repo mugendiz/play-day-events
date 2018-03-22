@@ -14,39 +14,8 @@
 
   <body>
 
-    <!-- <div class="fade" id="wrapper">
-    <div><img src="../img/clemypark.jpg" alt="Clemyjontri Park"></div>
-    <div><img src="../img/library.jpg" alt="Library"></div>
-    <div><img src="../img/zoocarousel.jpg" alt="Zoo Carousel"></div>
-    <div><img src="../img/leed2.jpg" alt="Lee District Park"></div>
-    <div><img src="../img/zoo.jpg" alt="National Zoo"></div>
-    <div><img src="../img/leedistrict.jpg" alt="Lee District"></div>
-    <div><img src="../img/clemy2.jpg" alt="Clemyjontri Park"></div>
-    </div> -->
-
-<div class="container cloud">
-  <img src="../img/" alt="cloud" style="width:100%;">
-  <div class="name">
-    NAME TBD
-  </div>
-</div>
-
-<h1>NAME TBD</h1>
-
-<header id="masthead">
-
- <div class="container navbar">
-    <a href="index" id="home">Home</a>
-    <nav>
-      <a class="category" href="babies" id="babies">Baby Events</a>
-      <a class="category" href="children">Children and Youth Events</a>
-      <a class="category" href="parents">Parent Events</a>
-    </nav>
-
-    <!-- <script type="text/javascript" src="./assets/js/babies.js">
-    </script> -->
-
-    <!-- <div class="row">
+<!-- LOGIN MODAL     -->
+    <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
         <a class="btn big-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>
@@ -114,37 +83,66 @@
                                <a href="javascript: showLoginForm();">Login</a>
                           </div>
                       </div>
-      		      </div>
-  		      </div>
-  		  </div> -->
-      </div>
+                </div>
+            </div>
+        </div>
 
-</header>
 
-<br><br><br><br><br>
+<!-- HEADER -->
+<div class="container cloud">
+  <img id="cloud" src="../img/cloud.png" alt="cloud" style="width:100%;">
+  <div class="name">
+    Runny Noses
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="babies">Baby & Toddler Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="children">Children & Youth Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="parent">Parent Events</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
 <!-- Add an Event -->
     <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
       <form>
         <fieldset>
-          <div class="card-header">Add an Event!</div>
+          <div class="card-header">Add an Event !</div>
           <div class="form-group">
-            <label for="eventInput"></label>
+          <br>
             <input type="eventInput" class="form-control" id="eventName" aria-describedby="emailHelp" placeholder="Event Name">
             <input type="eventInput" class="form-control" id="eventDate" aria-describedby="emailHelp" placeholder="Event Date">
             <input type="eventInput" class="form-control" id="eventlocatio" aria-describedby="emailHelp" placeholder="Location">
           </div>
           <div class="form-group">
-            <label for="exampleInputFile">File input</label>
+            <label class="labels" for="exampleInputFile">File input</label>
             <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
             <small id="fileHelp" class="form-text text-muted">Include Event Images.</small>
           </div>
           <fieldset class="form-group">
-            <legend>Event Category</legend>
+            <label class="labels">Event Category</label>
             <div class="form-check">
               <label class="form-check-label">
                 <input type="radio" class="form-check-input" name="categoryOptions" id="babyCategory" value="option1">
-                Baby Event
+                Babies & Toddler Event
               </label>
             </div>
             <div class="form-check">
@@ -163,6 +161,17 @@
         </form>
     </div>
 
+    <!-- <div class="fade">
+        <div><img src="../img/clemypark.jpg" alt="Clemyjontri Park"></div>
+      <div><img src="../img/library.jpg" alt="Library"></div>
+      <div><img src="../img/zoocarousel.jpg" alt="Zoo Carousel"></div>
+      <div><img src="../img/leed2.jpg" alt="Lee District Park"></div>
+      <div><img src="../img/zoo.jpg" alt="National Zoo"></div>
+      <div><img src="../img/leedistrict.jpg" alt="Lee District"></div>
+      <div><img src="../img/clemy2.jpg" alt="Clemyjontri Park"></div>
+      </div>
+ -->
+
 <!-- Footer -->
     <footer class="footer">
     <div class="container">
@@ -175,9 +184,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="../js/events.js"></script>
+<script type="text/javascript" src="../slick-1.8.0/slick/slick.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 
 
 
