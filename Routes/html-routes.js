@@ -37,6 +37,5 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/assets/layouts/parents.html"));
     });
 
-    // museum route loads museum.html
-
+ 
 };
