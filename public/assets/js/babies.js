@@ -19,11 +19,24 @@ function apiCall() {
     console.log(response);
     for (var i = 0; i < response.events.length; i++) {
       console.log(response.events[i].name.text);
-      var title = $('<h2>');
-      var description = $('<p>');
-      title.html(response.events[i].name.text);
+      var html = "<div class ='card_container'>"
+          html += "<div class ='title'>"
+          html += response.events[i].name.text
+          html += "</div>"
+          // html += "<div class ='description'>"
+          // html += response.events[i].description.text
+          // html += "</div>"
+          html += "<div class = 'image_container'>"
+          html += "<img src = "+response.events[i].logo.original.url+">"
+          html += "</div>"
+          html += "<div class = 'image_url'>"
+          html += "<href = "+response.events[i].url+">"
 
-      show.append(title)
+
+          html += "</div>"
+          html += "</div>"
+
+      show.append(html)
     }
   });
 }
