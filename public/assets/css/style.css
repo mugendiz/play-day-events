@@ -6,34 +6,17 @@ body {
 background: url("../img/weather.png");
 }
 
-h1 {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  display: inline-block;
-  justify-content: center;
-}
-
-@media screen and (min-width: 601px) {
-  div.name {
-    font-size: 40px;
-  }
-}
-
-@@media screen and (max-width: 600px){
-  div.name {
-    font-size: 10px;
-  }
-}
-
 /*  */
 #cloud {
   width: 70%;
   height: 190px;
   margin-top: 10px;
+
 }
 .cloud {
   width: 50%;
+  position: relative;
+	text-align: center;
 }
 /*  */
 #wrapper {
@@ -41,21 +24,11 @@ h1 {
 	margin: 0 auto;
 }
 
-.btn {
-  background-color: #00CED1;
-  color: white;
-  padding: 5px 5px;
-  margin: 8px 0;
-  border: none;
-  width: 30%;
-  border-radius: 15px;
-}
-
 .card {
-	margin: 20px 20px 20px 20px;
+	margin-left: 60px;
 	padding: 10px 10px 10px 10px;
 	text-align: center;
-  width: 600px;
+
 }
 
 #eventName , #eventDate {
@@ -63,62 +36,24 @@ h1 {
 	width: 50%;
 }
 
-#masthead {
-  position: absolute;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: #fff;
-  background: #fff;
-  border-bottom: 2px solid #ccc;
-  border-radius: 60px;
-  padding: 3px;
-  height: 80px;
-}
-
-.navbar {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-
-}
-
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
-}
-
 nav {
-  float: right;
   margin-top: 25px;
 	margin-bottom: 20px;
 	text-align: center;
+  width: 90%;
+  margin-left: 40px;
 }
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 2px solid #efefef;
-	margin:auto;
+
+.navbar-brand{
+  margin-left: 30px;
+  font-size: 25px;
 }
-/* nav a:first-child {
-  border-left: 0 none;
-} */
+.nav-link {
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+
 /* footer */
 footer {
   padding: 30px 0;
@@ -126,41 +61,50 @@ footer {
   font-size: 12px;
   text-align: center;
   background: #E6E6FA;
-  border-top: 3px solid ;
+  border-top: 3px solid #778899;
 	height: 20px;
 }
-
-#home {
-	float: left;
-	font-size: 30px;
-}
-
-.category {
-	float: right;
-  font-size: 20px;
-  margin: auto;
-}
-
-.cloud {
-	position: relative;
-	 text-align: center;
-}
-
 .name {
     position: absolute;
+    color: 		#9370DB;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 5px 5px #E6E6FA;
+    letter-spacing: 10px;
+    padding-top: 5px;
+    font-family: kinder, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+  div.name {
+    font-size: 40px;
+  }
+}
+@@media screen and (max-width: 600px){
+  div.name {
+    font-size: 10px;
+  }
 }
 @font-face {
 font-family: Lemonade ;
-src: url("../images/Lemonade.otf");
-}
-@font-face {
-font-family: Kinder ;
-src: url("../images/text.ttf");
+src: url("../img/lemonade stand.otf");
 }
 
+@font-face {
+font-family: Kinder ;
+src: url("../img/kindergarden.ttf");
+}
+
+.labels {
+  font-size: 20px;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+.card-header {
+  font-size: 30px;
+}
 
 
 
