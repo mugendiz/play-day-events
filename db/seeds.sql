@@ -1,4 +1,4 @@
-INSERT INTO events (Event_name, Event_Location, Event_Date, Event_Time, Post_Date)
+INSERT INTO events (Event_name, Event_Location, Event_Date, Event_Time Post_Date)
 VALUES ("Birthday Party", "White House", "April 14, 2018", "6:00pm", DATE);
 
 INSERT INTO events (Event_name, Event_Location, Event_Date, Event_Time, Post_Date)

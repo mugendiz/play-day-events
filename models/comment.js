@@ -14,6 +14,11 @@ module.exports = function (sequelize, DataTypes) {
                 len: [1, 15]
             }
         },
+
+        Event_Image: {
+           type: DataTypes.
+        }
+
         Event_Date: {
             type: DataTypes.INTEGER,
             defaultValue: "mm-dd-yyyy",
@@ -21,6 +26,7 @@ module.exports = function (sequelize, DataTypes) {
                 isNumeric: true,
                 len: [5]
             }
+
         }
     });
 
