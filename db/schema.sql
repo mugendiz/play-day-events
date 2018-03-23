@@ -9,7 +9,6 @@ CREATE TABLE events (
   Event_Name VARCHAR(45) NULL,
   Event_Location VARCHAR(250) NULL,
   Event_Date VARCHAR (10) NULL,
-  Event_Img VARCHAR (250) NULL,
   Event_Time VARCHAR (10) NULL,
   Post_Date DATE,
   PRIMARY KEY (id)
