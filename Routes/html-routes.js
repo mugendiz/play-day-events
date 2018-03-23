@@ -17,11 +17,11 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/assets/layouts/index.html"));
     });
 
+    // index route loads events.html
     app.get("/index", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/assets/layouts/index.html"));
     });
 
-    // bookstore route
     // bookstore route loads bookstore.html
     app.get("/babies", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/assets/layouts/babies.html"));
@@ -37,6 +37,5 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/assets/layouts/parents.html"));
     });
 
-    // museum route loads museum.html
-
+ 
 };
