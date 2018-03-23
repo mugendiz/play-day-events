@@ -1,19 +1,22 @@
 module.exports = function (sequelize, DataTypes) {
-    var Comment = sequelize.define("Comment", {
-        name: {
+    var events = sequelize.define("events", {
+      Event_Name: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [1, 15]
             }
         },
-        comment: {
+        Event_Location: {
             type: DataTypes.TEXT,
             allowNull: false
+            validate: {
+                len: [1, 15]
+            }
         },
-        zip: {
+        Event_Date: {
             type: DataTypes.INTEGER,
-            defaultValue: "20001",
+            defaultValue: "mm-dd-yyyy",
             validate:{
                 isNumeric: true,
                 len: [5]
