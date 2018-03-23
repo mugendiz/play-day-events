@@ -21,3 +21,5 @@ module.exports = {
     "dialect": "mysql"
   }
 }
+
+//process.env.DEVELOPMENT_PASSWORD
