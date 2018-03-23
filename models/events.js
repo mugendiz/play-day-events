@@ -16,6 +16,7 @@ module.exports = function(sequelize, DataTypes) {
           },
 
           Event_Date: {
+<<<<<<< HEAD:models/comment.js
             type: DataTypes.INTEGER,
             defaultValue: "mm-dd-yyyy",
             validate: {
@@ -23,6 +24,11 @@ module.exports = function(sequelize, DataTypes) {
               len: [5]
               }
             },
+=======
+            type: DataTypes.DATE,
+            defaultValue: sequelize.NOW,
+          },
+>>>>>>> 2cb1fbf75ac63c24edd4cf1b66548583c37309b7:models/events.js
 
             Event_Time: {
               type: DataTypes.INTEGER,
@@ -30,6 +36,7 @@ module.exports = function(sequelize, DataTypes) {
               validate: {
                 isNumeric: true,
                 len: [6]
+<<<<<<< HEAD:models/comment.js
                 }
               },
 
@@ -45,6 +52,14 @@ module.exports = function(sequelize, DataTypes) {
 
 
           }
+=======
+              }
+            },
+              Post_Date: {
+                type: DataTypes.DATE,
+                defaultValue: sequelize.NOW,
+              }
+>>>>>>> 2cb1fbf75ac63c24edd4cf1b66548583c37309b7:models/events.js
             });
 
 
