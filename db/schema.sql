@@ -6,8 +6,11 @@ USE events_DB;
 
 CREATE TABLE events (
   id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(45) NULL,
-  comments varchar(250) NULL,
-  zip INTEGER (25) NULL,
+  Event_Name VARCHAR(45) NULL,
+  Event_Location VARCHAR(250) NULL,
+  Event_Date VARCHAR (10) NULL,
+  Event_Img VARCHAR (250) NULL,
+  Event_Time VARCHAR (10) NULL,
+  Post Date DATE,
   PRIMARY KEY (id)
 );
