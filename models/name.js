@@ -4,10 +4,10 @@ module.exports = function (sequelize, DataTypes) {
         name: DataTypes.STRING
     });
 
-    Name.associate = function (models) {
+    Name.associate = function (events) {
         // Associating Name with Posts
         // When a Name is deleted, also delete any associated Posts
-        Name.hasMany(models.Comment, {
+        Name.hasMany(models.events, {
             onDelete: "cascade"
         });
     };

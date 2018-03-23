@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
           },
           Event_Location: {
             type: DataTypes.TEXT,
-            allowNull: false
+            allowNull: false,
             validate: {
               len: [1, 15]
             }
@@ -21,15 +21,17 @@ module.exports = function(sequelize, DataTypes) {
             validate: {
               isNumeric: true,
               len: [5]
-            }
+              }
+            },
 
-            Event_Time {
+            Event_Time: {
               type: DataTypes.INTEGER,
               timeValue: "HH:MM:SS",
               validate: {
                 isNumeric: true,
                 len: [6]
-              }
+                }
+              },
 
               Post_Date: {
                 type: DataTypes.INTEGER,
@@ -37,11 +39,12 @@ module.exports = function(sequelize, DataTypes) {
                 validate: {
                   isNumeric: true,
                   len: [5]
-                }
-
-
-
               }
+
+
+
+
+          }
             });
 
 
