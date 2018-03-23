@@ -11,6 +11,6 @@ CREATE TABLE events (
   Event_Date VARCHAR (10) NULL,
   Event_Img VARCHAR (250) NULL,
   Event_Time VARCHAR (10) NULL,
-  Post Date DATE,
+  Post_Date DATE,
   PRIMARY KEY (id)
 );
