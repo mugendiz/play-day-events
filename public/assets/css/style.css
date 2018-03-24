@@ -24,17 +24,6 @@ background: url("../img/weather.png");
 	margin: 0 auto;
 }
 
-.card {
-	margin-left: 60px;
-	padding: 10px 10px 10px 10px;
-	text-align: center;
-
-}
-
-#eventName , #eventDate {
-	display: inline-block;
-	width: 50%;
-}
 
 nav {
   margin-top: 25px;
@@ -45,7 +34,7 @@ nav {
 }
 
 .navbar-brand{
-  margin-left: 30px;
+  margin-left: 5px;
   font-size: 25px;
 }
 .nav-link {
@@ -94,16 +83,6 @@ src: url("../img/lemonade.otf");
 @font-face {
 font-family: Kinder ;
 src: url("../img/kindergarden.ttf");
-}
-
-.labels {
-  font-size: 20px;
-  text-decoration: underline;
-  letter-spacing: 3px;
-}
-
-.card-header {
-  font-size: 30px;
 }
 
 

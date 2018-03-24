@@ -9,6 +9,8 @@
     <link rel="styleshseet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.0/slick/slick-theme.css"/>
 
   </head>
 
@@ -120,33 +122,60 @@
 
 
 
-    <!-- <div class="fade">
-        <div><img src="../img/clemypark.jpg" alt="Clemyjontri Park"></div>
-      <div><img src="../img/library.jpg" alt="Library"></div>
-      <div><img src="../img/zoocarousel.jpg" alt="Zoo Carousel"></div>
-      <div><img src="../img/leed2.jpg" alt="Lee District Park"></div>
-      <div><img src="../img/zoo.jpg" alt="National Zoo"></div>
-      <div><img src="../img/leedistrict.jpg" alt="Lee District"></div>
-      <div><img src="../img/clemy2.jpg" alt="Clemyjontri Park"></div>
+    <div class="autoplay">
+        <div class="image" src="assets/img/clemypark.jpg" alt="Clemyjontri Park"></div>
+
+
+      <div class="image">
+        <img src="assets/img/zoocarousel.jpg" alt="Zoo Carousel">
+        </div>
+
+      <div class="image">
+        <img src="assets/img/leed2.jpg" alt="Lee District Park">
+        </div>
+
+      <div class="image">
+        <img src="assets/img/zoo.jpg" alt="National Zoo">
+          </div>
+
+      <div class="image">
+        <img src="assets/img/leedistrict.jpg" alt="Lee District">
+          </div>
+
+      <div class="image">
+        <img src="assets/img/clemy2.jpg" alt="Clemyjontri Park">
       </div>
- -->
+
+</div>
+
 
 <!-- Footer -->
     <footer class="footer">
     <div class="container">
-    <span>Copyright &copy; 2018 |  |  |  | </span>
+    <span>Copyright &copy; 2018  Deniz Aksoylu | Athina Johnson | Amber Runge | Karon Williamson | Andrew Zoka </span>
     </div>
     </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/slick-1.8.0/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
 
+	</script>
 
   </body>
 </html>
