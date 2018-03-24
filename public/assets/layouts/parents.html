@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PROJECT 2</title>
+    <title>Play Day</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="styleshseet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/api.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/parents.js"></script>
-
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 </head>
 
   <body onload="apiCallss()">
@@ -34,23 +35,6 @@
           </div>
           <div class="modal-body">
             <div class="box">
-              <div class="content">
-                <div class="social">
-                  <a class="circle github" href="/auth/github">
-                                          <i class="fa fa-github fa-fw"></i>
-                                      </a>
-                  <a id="google_login" class="circle google" href="/auth/google_oauth2">
-                                          <i class="fa fa-google-plus fa-fw"></i>
-                                      </a>
-                  <a id="facebook_login" class="circle facebook" href="/auth/facebook">
-                                          <i class="fa fa-facebook fa-fw"></i>
-                                      </a>
-                </div>
-                <div class="division">
-                  <div class="line l"></div>
-                  <span>or</span>
-                  <div class="line r"></div>
-                </div>
                 <div class="error"></div>
                 <div class="form loginBox">
                   <form method="post" action="/login" accept-charset="UTF-8">
@@ -93,12 +77,12 @@
 <div class="container cloud">
   <img id="cloud" src="assets/img/cloud.png" alt="cloud" style="width:100%;">
   <div class="name">
-    Runny Noses
+    Play Day
   </div>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Home</a>
+  <a class="navbar-brand" href="index">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -123,22 +107,12 @@
 </nav>
 
 
-
-
- <div class="container">
-    <nav>
-      <a href="index">Home</a>
-      <a href="babies">Babies</a>
-      <a href="children">Children</a>
-    </nav>
-
-
               <div class="container">
                 <div id="see">
                 </div>
               </div>
 
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
   </html>

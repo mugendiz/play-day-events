@@ -66,29 +66,29 @@ footer {
 }
 .name {
     position: absolute;
-    color: 		#9370DB;
+    color: #8A2BE2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px #E6E6FA;
     letter-spacing: 10px;
-    padding-top: 5px;
-    font-family: kinder, Helvetica, Arial, sans-serif;
+    padding-top: 10px;
+    font-family: Lemonade, Helvetica, Arial, sans-serif;
 }
 
 @media screen and (min-width: 601px) {
   div.name {
-    font-size: 40px;
+    font-size: 55px;
   }
 }
 @@media screen and (max-width: 600px){
   div.name {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 @font-face {
 font-family: Lemonade ;
-src: url("../img/lemonade stand.otf");
+src: url("../img/lemonade.otf");
 }
 
 @font-face {
