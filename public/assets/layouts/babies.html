@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
     <link rel="styleshseet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/api.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/babies.js">
-    </script>
+    <script type="text/javascript" src="./assets/js/babies.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 
   </head>
 
@@ -39,23 +39,6 @@
           </div>
           <div class="modal-body">
             <div class="box">
-              <div class="content">
-                <div class="social">
-                  <a class="circle github" href="/auth/github">
-                                          <i class="fa fa-github fa-fw"></i>
-                                      </a>
-                  <a id="google_login" class="circle google" href="/auth/google_oauth2">
-                                          <i class="fa fa-google-plus fa-fw"></i>
-                                      </a>
-                  <a id="facebook_login" class="circle facebook" href="/auth/facebook">
-                                          <i class="fa fa-facebook fa-fw"></i>
-                                      </a>
-                </div>
-                <div class="division">
-                  <div class="line l"></div>
-                  <span>or</span>
-                  <div class="line r"></div>
-                </div>
                 <div class="error"></div>
                 <div class="form loginBox">
                   <form method="post" action="/login" accept-charset="UTF-8">
@@ -103,7 +86,7 @@
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Home</a>
+  <a class="navbar-brand" href=index>Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -124,22 +107,17 @@
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
-
- <div class="container">
-    <nav>
-      <a href="index">Home</a>
-      <a href="parents">Parents</a>
-      <a href="children">Children</a>
-      <a href="form">Create an Event</a>
-    </nav>
-  </div>
 </nav>
 
-
-      <div class="container">
-        <div id="show">
-        </div>
-      </div>
+<div class="container">
+<div class="card border-danger mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <div id="show">
+    </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -151,11 +129,7 @@
           </footer>
 
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="../js/index.js"></script>
+
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
