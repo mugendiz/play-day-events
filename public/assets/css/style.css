@@ -25,15 +25,14 @@ background: url("../img/weather.png");
 }
 
 .card {
-	margin-left: 60px;
-	padding: 10px 10px 10px 10px;
 	text-align: center;
-
+  margin: auto;
 }
 
-#eventName , #eventDate {
+.form-group {
 	display: inline-block;
-	width: 50%;
+	width: 30%;
+  padding: 5px;
 }
 
 nav {
@@ -50,7 +49,7 @@ nav {
 }
 .nav-link {
   font-size: 18px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 
@@ -60,7 +59,7 @@ footer {
   clear: both;
   font-size: 12px;
   text-align: center;
-  background: #E6E6FA;
+  background: #90EE90;
   border-top: 3px solid #778899;
 	height: 20px;
 }
@@ -106,16 +105,19 @@ src: url("../img/kindergarden.ttf");
   font-size: 30px;
 }
 
+.border-success {
+  width: 70%;
+  padding: 10px;
+}
 
-
-
-
-
-
-
-
-
-
+.carousel-item {
+  width: 80%;
+  margin-left: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 80%;
+  padding: 40px;
+}
 
 
 
@@ -242,36 +244,6 @@ src: url("../img/kindergarden.ttf");
     text-align: center;
 }
 
-.login .social .circle{
-    background-color: #EEEEEE;
-    color: #FFFFFF;
-    border-radius: 100px;
-    display: inline-block;
-    margin: 0 17px;
-    padding: 15px;
-}
-.login .social .circle .fa{
-    font-size: 16px;
-}
-.login .social .facebook{
-    background-color: #455CA8;
-    color: #FFFFFF;
-}
-.login .social .google{
-    background-color: #F74933;
-}
-.login .social .github{
-    background-color: #403A3A;
-}
-.login .facebook:hover{
-    background-color: #6E83CD;
-}
-.login .google:hover{
-    background-color: #FF7566;
-}
-.login .github:hover{
-    background-color: #4D4D4d;;
-}
 .login .forgot {
     color: #797979;
     margin-left: 0;
@@ -289,6 +261,7 @@ src: url("../img/kindergarden.ttf");
     padding: 15px 50px;
     text-transform: uppercase;
     width: 100%;
+    float: right;
 }
 .login .btn-login:hover, .registerBox .btn-register:hover{
     background-color: #00A4E4;
