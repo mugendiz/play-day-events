@@ -1,11 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "oliver",
-=======
     "password": "dudewasup23",
->>>>>>> 2e760d2cff39077a3390a68ca199f6d4f15160c3
     "database": "events_DB",
     "host": "127.0.0.1",
     "dialect": "mysql"
