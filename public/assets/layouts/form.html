@@ -9,10 +9,11 @@
     <link rel="styleshseet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/js/format.js"></script>
   </head>
 
-
+  <!-- <body onload="apiCall()"> -->
 
 <!-- LOGIN MODAL     -->
     <div class="row">
@@ -52,8 +53,8 @@
                 <div class="error"></div>
                 <div class="form loginBox">
                   <form method="post" action="/login" accept-charset="UTF-8">
-                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                    <input class="email" class="form-control" type="text" placeholder="Email" name="email">
+                    <input class="password" class="form-control" type="password" placeholder="Password" name="password">
                     <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
                   </form>
                 </div>
@@ -63,9 +64,9 @@
               <div class="content registerBox" style="display:none;">
                 <div class="form">
                   <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                    <input class="email" class="form-control" type="text" placeholder="Email" name="email">
+                    <input class="password" class="form-control" type="password" placeholder="Password" name="password">
+                    <input class="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
                     <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
                   </form>
                 </div>
@@ -97,7 +98,7 @@
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index">Home</a>
+  <a class="navbar-brand" href="#">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -122,26 +123,26 @@
 </nav>
 
 <!-- FORM -->
-<div class="card border-success mb-3" style="max-width: 65rem;">
+<div class="card border-success mb-3" style="max-width: 20rem;">
   <div class="card-header">Create an Event !</div>
   <div class="card-body">
     <form>
       <fieldset>
         <div class="form-group">
           <label for="eventName">Event Name</label>
-          <input type="text" class="form-control eventName" id="formId" aria-describedby="emailHelp" placeholder="Enter Name">
+          <input type="text" class="form-control eventName" class="formId" aria-describedby="emailHelp" placeholder="Enter Name">
         </div>
         <div class="form-group">
           <label for="eventLocation">Event Location</label>
-          <input type="text" class="form-control eventLocation" id="formId" placeholder="Event Location">
+          <input type="text" class="form-control eventLocation" class="eventLoc" placeholder="Event Location">
         </div>
         <div class="form-group">
           <label for="eventDate">Event Date</label>
-          <input type="text" class="form-control eventDate" id="formId" placeholder="Event Date">
+          <input type="text" class="form-control eventDate" class="eventDate" placeholder="Event Date">
         </div>
         <div class="form-group">
           <label for="eventTime">Event Time</label>
-          <input type="text" class="form-control Eventtime" id="formId" placeholder="Event Time">
+          <input type="text" class="form-control Eventtime" class="eventTime" placeholder="Event Time">
         </div>
         </fieldset>
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -152,23 +153,34 @@
 
 
 
+
+
+
+
+
+<!-- <div class="container">
+   <nav>
+     <a href="index">Home</a>
+     <a href="babies">Babies</a>
+     <a href="children">Children</a>
+   </nav> -->
+
 <!-- Footer -->
-<footer class="footer">
-<div class="container">
-<span>Copyright &copy; 2018  Deniz Aksoylu | Athina Johnson  | Amber Runge | Karon Williamson | Andrew Zoka </span>
-</div>
-</footer>
-
-
+    <footer class="footer">
+    <div class="container">
+    <span>Copyright &copy; 2018 |  |  |  | </span>
+    </div>
+    </footer>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/slick-1.8.0/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 
   </body>
 </html>

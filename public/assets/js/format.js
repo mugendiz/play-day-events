@@ -1,7 +1,7 @@
 
 
 
-  function runTableQuery() {
+  function runEventQuery() {
 
       // Here we get the location of the root page.
       // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
@@ -25,46 +25,40 @@
 
           // Create the HTML Well (Section) and Add the table content for each reserved table
           var eventSection = $("<div>");
-          eventSection.addClass("well");
-          eventSection.attr("id", "tableWell-" + i + 1);
+          eventSection.addClass("formID");
+          eventSection.addClass("eventLoc");
+          eventSection.addClass("eventDate");
+          eventSection.addClass("eventTime");
+          eventSection.attr("formID", "eventLoc", "eventDate" "eventTime" + i + 1);
           $("#eventSection").append(eventSection);
 
-          var tableNumber = i + 1;
+          var eventNumber = i + 1;
 
 
           // Then display the remaining fields in the HTML (Section Name, Date, URL)
-          $("#tableWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
+          $("#eventWell-" + i + 1).append("<h2><span class='form-group'>" + eventName + "</span> | " + eventArray[i].customerID + "</h2>");
         }
       });
     }
 
 
+  function clearEvent() {
 
+    var currentURL = window.location.origin;
+    $.ajax({ url: currentURL + "/api/clear", method: "POST" });
 
+  }
 
+  $("#clear").on("click", function() {
+    alert("Clearing...");
+    clearEvent();
 
+    // Refresh the page after data is cleared
+    location.reload();
 
-    // Here we get the location of the root page.
-    // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
-
-  // This function resets all of the data in our tables. This is intended to let you restart a demo.
-  // function clearEvent() {
-  //
-  //   var currentURL = window.location.origin;
-  //   $.ajax({ url: currentURL + "/api/clear", method: "POST" });
-  //
-  // }
-
-  // $("#clear").on("click", function() {
-  //   alert("Clearing...");
-  //   clearEvent();
-  //
-  //   // Refresh the page after data is cleared
-  //   location.reload();
-  //
-  // });
+  });
 
 
   // Run Queries!
   // ==========================================
-  runTableQuery();
+  runEventQuery();
