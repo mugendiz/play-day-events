@@ -97,6 +97,36 @@ module.exports = async function(sequelizeInstance, DataTypes){
 ////////////////////////
 
 
+///////////////////////
+
+// module.exports = async function(sequelizeInstance, DataTypes){
+//     const Event = sequelizeInstance.define('event', {
+//       eventName: Sequelize.TEXT,
+//       eventLocation: Sequelize.STRING[30],
+//       eventDate: Sequelize.DATE,
+//       eventTime: Sequelize.TIME
+//     });
+//
+//     return sequelizeInstance.sync().then(() => {
+//
+//       return Event.create({
+//         eventName: '',
+//         eventLocation: '',
+//         eventDate: '',
+//         eventTime: ''
+//       });
+//     })
+//     .then(() => {
+//       return Event.findAll().then(entries => {
+//         console.log(events.map(e => e.get({ plain: true })));
+//         return Event;
+//       })
+//     });
+//   };
+
+////////////////////////
+
+
 // API Call for search
 
 function searchApiCall() {
