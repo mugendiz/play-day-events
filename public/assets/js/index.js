@@ -48,51 +48,51 @@ function shakeModal(){
               $('#loginModal .modal-dialog').removeClass('shake');
     }, 1000 );
 }
-// 
-// function submitEvent() {
-//   $('.registerBox').fadeOut('fast');
-//   $('#eventBtn').click() {
-//       console.log('.eventName');
-//       var html = "<div class ='card_container'>"
-//       html += "<div class ='title'>"
-//       html += db.eventName
-//       html += "</div>"
-//       html += "<div class ='description'>"
-//       html += db.eventLocation
-//       html += db.eventDate
-//       html += db.eventTime
-//       html += "</div>"
-//       html += "</div>"
-//     show.append(html)
-// }
-// }
+
+function submitEvent() {
+  $('.registerBox').fadeOut('fast');
+  $('#eventBtn').click() {
+      console.log('.eventName');
+      var html = "<div class ='card_container'>"
+      html += "<div class ='title'>"
+      html += db.eventName
+      html += "</div>"
+      html += "<div class ='description'>"
+      html += db.eventLocation
+      html += db.eventDate
+      html += db.eventTime
+      html += "</div>"
+      html += "</div>"
+    show.append(html)
+}
+}
 
 ///////////////////////
 
-module.exports = async function(sequelizeInstance, DataTypes){
-    const Event = sequelizeInstance.define('event', {
-      eventName: Sequelize.TEXT,
-      eventLocation: Sequelize.STRING[30],
-      eventDate: Sequelize.DATE,
-      eventTime: Sequelize.TIME
-    });
-
-    return sequelizeInstance.sync().then(() => {
-
-      return Event.create({
-        eventName: '',
-        eventLocation: '',
-        eventDate: '',
-        eventTime: ''
-      });
-    })
-    .then(() => {
-      return Event.findAll().then(entries => {
-        console.log(events.map(e => e.get({ plain: true })));
-        return Event;
-      })
-    });
-  };
+// module.exports = async function(sequelizeInstance, DataTypes){
+//     const Event = sequelizeInstance.define('event', {
+//       eventName: Sequelize.TEXT,
+//       eventLocation: Sequelize.STRING[30],
+//       eventDate: Sequelize.DATE,
+//       eventTime: Sequelize.TIME
+//     });
+//
+//     return sequelizeInstance.sync().then(() => {
+//
+//       return Event.create({
+//         eventName: '',
+//         eventLocation: '',
+//         eventDate: '',
+//         eventTime: ''
+//       });
+//     })
+//     .then(() => {
+//       return Event.findAll().then(entries => {
+//         console.log(events.map(e => e.get({ plain: true })));
+//         return Event;
+//       })
+//     });
+//   };
 
 ////////////////////////
 
