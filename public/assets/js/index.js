@@ -49,6 +49,24 @@ function shakeModal(){
     }, 1000 );
 }
 
+function submitEvent() {
+  $('.registerBox').fadeOut('fast');
+  $('#eventBtn').click() {
+      console.log('.eventName');
+      var html = "<div class ='card_container'>"
+      html += "<div class ='title'>"
+      html += db.eventName
+      html += "</div>"
+      html += "<div class ='description'>"
+      html += db.eventLocation
+      html += db.eventDate
+      html += db.eventTime
+      html += "</div>"
+      html += "</div>"
+    show.append(html)
+}
+}
+
 // API Call for search
 
 function searchApiCall() {

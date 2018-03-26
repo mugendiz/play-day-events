@@ -16,7 +16,7 @@ function runEventQuery() {
       console.log("URL: " + currentURL + "/api/form");
       console.log("------------------------------------");
 
-      // Here we then log the NYTData to console, where it will show up as an object.
+      // Here we then log the Data to console, where it will show up as an object.
       console.log(eventArray);
       console.log("------------------------------------");
 
@@ -25,22 +25,20 @@ function runEventQuery() {
 
         // Create the HTML Well (Section) and Add the table content for each reserved table
         var eventSection = $("<div>");
-        eventSection.addClass("formID");
-        eventSection.addClass("eventLoc");
+        eventSection.addClass("eventName");
+        eventSection.addClass("eventLocation");
         eventSection.addClass("eventDate");
         eventSection.addClass("eventTime");
-        eventSection.attr("formID", "eventLoc", "eventDate"
-          "eventTime" + i + 1);
+        eventSection.attr("eventName", "eventLocation", "eventDate", "eventTime" + i + 1);
         $("#eventSection").append(eventSection);
 
         var eventNumber = i + 1;
 
-        // Then display the remaining fields in the HTML (Section Name, Date, URL)
-        $("#eventWell-" + i + 1).append("<h2><span class='form-group'>" + eventName + "</span> | " + eventArray[i].customerID + "</h2>");
+        // // Then display the remaining fields in the HTML (Section Name, Date, URL)
+        // $("#show" + i + 1).append("<h2><span class='form-group'>" + eventName + "</span> | " + eventArray[i].customerID + "</h2>");
       }
     });
 }
-
 
 function clearEvent() {
 
@@ -48,18 +46,10 @@ function clearEvent() {
   $.ajax({
     url: currentURL + "/api/clear",
     method: "POST"
-  });
+  })
 
-}
+};
 
-$("#clear").on("click", function() {
-  alert("Clearing...");
-  clearEvent();
-
-  // Refresh the page after data is cleared
-  location.reload();
-
-});
 
 
 // Run Queries!
