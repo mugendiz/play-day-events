@@ -1,137 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Play Day </title>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="styleshseet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/api.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/children.js"></script>
-    <script type="text/javascript" src="./assets/js/index.js"></script>
+  <title>Play Day </title>
 
-
-  </head>
-
-  <body onload="apiCalls()">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="styleshseet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/api.css">
+  <script type="text/javascript" src="./assets/js/children.js"></script>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
 
 
-<!-- LOGIN MODAL     -->
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6">
-        <a class="btn big-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>
-        <a class="btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Register</a></div>
-      <div class="col-sm-3"></div>
-    </div>
+</head>
 
-    <div class="modal fade login" id="loginModal">
-      <div class="modal-dialog login animated">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Login with</h4>
-          </div>
-          <div class="modal-body">
-            <div class="box">
-              <div class="content">
-
-                <div class="division">
-                  <div class="line l"></div>
-                  <span>or</span>
-                  <div class="line r"></div>
-                </div>
-                <div class="error"></div>
-                <div class="form loginBox">
-                  <form method="post" action="/login" accept-charset="UTF-8">
-                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="content registerBox" style="display:none;">
-                <div class="form">
-                  <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                    <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="forgot login-footer">
-              <span>Looking to
-                                   <a href="javascript: showRegisterForm();">create an account</a>
-                              ?</span>
-                          </div>
-                          <div class="forgot register-footer" style="display:none">
-                               <span>Already have an account?</span>
-                               <a href="javascript: showLoginForm();">Login</a>
-                          </div>
-                      </div>
-                </div>
-            </div>
-        </div>
+<body onload="apiCalls()">
 
 
-<!-- HEADER -->
-<div class="container cloud">
-  <img id="cloud" src="assets/img/cloud.png" alt="cloud" style="width:100%;">
-  <div class="name">
-    Play Day
+  <!-- LOGIN MODAL     -->
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="btn big-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>
+      <a class="btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Register</a></div>
+    <div class="col-sm-3"></div>
   </div>
-</div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Login with</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box">
+            <div class="content">
+
+              <div class="division">
+                <div class="line l"></div>
+                <span>or</span>
+                <div class="line r"></div>
+              </div>
+              <div class="error"></div>
+              <div class="form loginBox">
+                <form method="post" action="/login" accept-charset="UTF-8">
+                  <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                  <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="content registerBox" style="display:none;">
+              <div class="form">
+                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                  <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                  <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                  <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                  <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="forgot login-footer">
+            <span>Looking to
+                             <a href="javascript: showRegisterForm();">create an account</a>
+                              </span>
+          </div>
+          <div class="forgot register-footer" style="display:none">
+            <span>Already have an account?</span>
+            <a href="javascript: showLoginForm();">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <div class="container cloud">
+    <img id="cloud" src="assets/img/cloud.png" alt="cloud" style="width:100%;">
+    <div class="name">
+      Play Day
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor03">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="babies">Baby & Toddler Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="children">Children & Youth Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="parents">Parent Events</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="babies">Baby & Toddler Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="children">Children & Youth Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="parents">Parent Events</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="search" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button id="searchBtn" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div id="appear">
+    </div>
   </div>
-</nav>
 
-
-          <div class="container">
-            <div id="appear">
-            </div>
-          </div>
-
-          <!-- Footer -->
-          <footer class="footer">
-          <div class="container">
-          <span>Copyright &copy; 2018  Deniz Aksoylu | Athina Johnson  | Amber Runge | Karon Williamson | Andrew Zoka </span>
-          </div>
-          </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span>Copyright &copy; 2018  Deniz Aksoylu | Athina Johnson  | Amber Runge | Karon Williamson | Andrew Zoka </span>
+    </div>
+  </footer>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
+
 </html>
