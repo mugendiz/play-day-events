@@ -19,7 +19,7 @@ var eventArray = [
   Event_Location:"ny",
   Event_Date:"April 20, 2018",
   Event_Time:"3:00pm",
-  
+
 }
 ];
 
