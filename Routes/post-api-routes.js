@@ -9,11 +9,11 @@ var eventArray = require("../models/format")
 // =============================================================
 module.exports = function(app) {
 
-  app.get("/api/form",function(req, res) {
+  app.get("../public/layouts/form",function(req, res) {
     res.json(eventArray);
   });
 
-  app.post("/api/form", function(req, res) {
+  app.post("../public/layouts/form", function(req, res) {
       eventArray.push(req.body);
       res.json(true);
     });

@@ -1,19 +1,17 @@
 {
   "name": "project_2_kid_friendly_events",
   "version": "1.0.0",
-  "description": "## **PROJECT NAME** \"This app\" is an easy to use tool to help parents, families, and caregivers find age approprite events in the DMV area.  The applicable age ranges for this app are from 0-12 year. \"App name\" will allow you to choose from events at Libraries, Museums & Zoo, and  Park & Recreational Facilities. Each subject will show a variety of events per age group chosen in the DMV area.",
-  "main": "events.js",
+  "description": "## **PLAY DAY** \\\"This app\\\" is an easy to use tool to help parents, families, and caregivers find age approprite events in the DMV area.  The applicable age ranges for this app are from 0-12 year. \\\"App name\\\" will allow you to choose from events at Libraries, Museums & Zoo, and  Park & Recreational Facilities. Each subject will show a variety of events per age group chosen in the DMV area.",
+  "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
-    "eventbrite": "^0.1.6",
     "express": "^4.16.3",
-    "firebase": "^4.11.0",
-    "init": "^0.1.2",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
-    "nodemon": "^1.17.2",
+    "npm": "^5.7.1",
     "require": "^2.4.20",
-    "sequelize": "^4.37.3"
+    "sequelize": "^4.37.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -22,12 +20,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mugendiz/group_6_Project2.git"
+    "url": "git+https://github.com/mugendiz/play-day-events.git"
   },
+  "keywords": [
+    "Children",
+    "Friendly",
+    "Events"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mugendiz/group_6_Project2/issues"
+    "url": "https://github.com/mugendiz/play-day-events/issues"
   },
-  "homepage": "https://github.com/mugendiz/group_6_Project2#readme"
+  "homepage": "https://github.com/mugendiz/play-day-events#readme"
 }
