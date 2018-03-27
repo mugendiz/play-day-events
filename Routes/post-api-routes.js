@@ -17,16 +17,16 @@ module.exports = function(app) {
       eventArray.push(req.body);
       res.json(true);
     });
+};
 
-
-
+//
   // app.post("/api/clear", function() {
   //   // Empty out the arrays of data
   //   eventArray = [];
   //
   //   console.log(eventArray);
   // });
-};
+
 
     // // GET route for getting all of the events
     // app.get("/api/events", function (req, res) {
