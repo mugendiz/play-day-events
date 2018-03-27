@@ -12,9 +12,9 @@ var mysql2 = require("mysql");
 var connection;
 
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql2.createConnection(process.env.JAWSDB_URL);
 } else {
-  connection = mysql.createConnection(
+  connection = mysql2.createConnection(
     {
       host: 'localhost',
       user:'root',
