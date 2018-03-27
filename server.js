@@ -8,6 +8,10 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var sequelize = require("sequelize");
 var mysql2 = require("mysql");
+require('dotenv').config();
+
+var app = express();
+var PORT = process.env.PORT || 8080;
 
 var connection;
 
@@ -22,11 +26,6 @@ if (process.env.JAWSDB_URL) {
       database: 'events_DB'
     });
 };
-
-require('dotenv').config();
-
-var app = express();
-var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 // var db = require("./models");
